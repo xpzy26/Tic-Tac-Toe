@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body onload ="startGame()">
+        <h1>Tic Tac Toe</h1>
+        <div id="message">Messages.</div>
+        <br/>
+        <table>
+            <tr>
+                <td class="square" id="s1" onClick="nextMove(this)"></td>
+                <td class="square" id="s2" onClick="nextMove(this)"></td>
+                <td class="square" id="s3" onClick="nextMove(this)"></td>
+            </tr>
+            <tr>
+                <td class="square" id="s4" onClick="nextMove(this)"></td>
+                <td class="square" id="s5" onClick="nextMove(this)"></td>
+                <td class="square" id="s6" onClick="nextMove(this)"></td>
+            </tr>
+            <tr>
+                <td class="square" id="s7" onClick="nextMove(this)"></td>
+                <td class="square" id="s8" onClick="nextMove(this)"></td>
+                <td class="square" id="s9" onClick="nextMove(this)"></td>
+            </tr>
+        </table>
+        <br/>
+        <a href="javascript: startGame();" id="restart">Start Over</a>
+        <script src="script.js"></script>
+    </body>
+</html>
