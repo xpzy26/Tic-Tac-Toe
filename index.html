@@ -10,8 +10,12 @@
     
     <body onload ="startGame()">
         <h1>Tic Tac Toe</h1>
+        
+        <!-- Set messages for winner, tie game or click correct box -->
         <div id="message">Messages.</div>
         <br/>
+        
+        <!-- Create Tic Tac Toe grid box -->
         <table>
             <tr>
                 <td class="square" id="s1" onClick="nextMove(this)"></td>
@@ -30,6 +34,8 @@
             </tr>
         </table>
         <br/>
+        
+        <!-- Restart game link -->
         <a href="javascript: startGame();" id="restart">Start Over</a>
         <script src="script.js"></script>
     </body>
